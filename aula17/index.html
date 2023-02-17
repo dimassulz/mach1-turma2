@@ -96,6 +96,12 @@
                 placeholder="Digite o preço do produto"
               />
             </div>
+            <div id="mensagemSucesso" class="alert alert-success inativo" role="alert">
+
+            </div>
+            <div id="mensagemErro" class="alert alert-danger inativo" role="alert">
+
+            </div>
             <button type="button" class="btn btn-primary" id="botao-salvar">
               Salvar
             </button>
@@ -108,7 +114,24 @@
       <!-- Lista de produtos-->
       <section id="listagem-produtos" class="inativo">
         <h2>Lista cadastrada</h2>
-        <ul id="lista-produtos"></ul>
+        <table id="lista-produtos" class="table">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        <div class="mb-3">
+          <button id="voltar" class="btn btn-primary">
+            Voltar e adicionar
+          </button>
+        </div>
       </section>
       <footer>
         Bora dar uma lida na
